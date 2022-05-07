@@ -30,6 +30,7 @@ func OpenDB() *gorm.DB {
 
 	db.AutoMigrate(
 		&model.User{},
+		// &model.Money{},
 	)
 
 	DB = db
